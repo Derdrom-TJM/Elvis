@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var message = ""
     @State private var imageName = ""
+    // Use @State to keep the state of the variable when the UI is redrawn
     var body: some View {
         VStack {
             Text("What's So Funny 'Bout")
@@ -28,6 +29,7 @@ struct ContentView: View {
             Spacer()
             HStack{
                 Spacer()
+                //For Buttons use (titleKey, action) initiator, then hit enter on the return void to create a closure
                 Button("Peace"){
                     message = "Peace"
                     imageName = "peacesign"
